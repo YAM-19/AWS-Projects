@@ -55,7 +55,7 @@ Amazon VPC
 7. Created a Target Group.
 8. Configured an Application Load Balancer.
 9. Created an Auto Scaling Group.
-10. Verified successful deployment.
+10. Configured and reviewed the AWS infrastructure components..
 
 ## Learning Outcomes
 
