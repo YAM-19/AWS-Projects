@@ -1,44 +1,60 @@
-# CI/CD and AWS CodeCommit
+# CI/CD and AWS DevOps Services
 
 ## Overview
 
-This project documents the concepts learned about Continuous Integration (CI), Continuous Delivery/Deployment (CD), Jenkins, and AWS CodeCommit as part of a CI/CD workflow.
+This project covers the concepts of Continuous Integration (CI), Continuous Delivery/Deployment (CD), Jenkins, and AWS CI/CD services.
 
 ## CI/CD
 
-CI/CD helps automate the process of integrating, testing, and deploying application code.
+CI/CD automates the process of integrating, building, testing, and deploying application code.
 
 ### CI/CD Flow
 
-Developer → Code Repository → Jenkins → Build → Test → Deployment
+Developer → Source Repository → Build → Test → Deploy → Application
 
-## AWS CodeCommit
+## AWS CI/CD Services
 
-AWS CodeCommit is an AWS managed source control service used to store and manage source code repositories.
+### AWS CodeCommit
 
-In this learning project, AWS CodeCommit was studied as part of the CI/CD workflow.
+AWS CodeCommit is a managed source control service used to store and manage source code repositories.
 
-**Note:** AWS CodeCommit was learned conceptually. A CodeCommit repository was not created for hands-on practice.
+### AWS CodeBuild
+
+AWS CodeBuild is a fully managed build service used to compile code, run tests, and create build artifacts.
+
+**CodeBuild → Build and Test**
+
+### AWS CodeDeploy
+
+AWS CodeDeploy is a deployment service used to automate application deployments.
+
+**CodeDeploy → Deploy**
+
+### AWS CodePipeline
+
+AWS CodePipeline is a continuous delivery service that automates the workflow between source, build, test, and deployment stages.
+
+**CodePipeline → Automates the CI/CD workflow**
 
 ## Jenkins
 
-Jenkins is an automation server that can be used to build CI/CD pipelines and automate activities such as building, testing, and deployment.
+Jenkins is an automation server used to create CI/CD pipelines and automate activities such as building, testing, and deployment.
 
-## Key Concepts Learned
+## CI/CD Flow with AWS
 
-- Continuous Integration (CI)
-- Continuous Delivery (CD)
-- Version Control Systems (VCS)
-- AWS CodeCommit
-- Jenkins
-- CI/CD Pipeline
-- Build and Testing
-- Application Deployment
+```text
+Developer
+    ↓
+Source Repository
+    ↓
+CodePipeline
+    ↓
+CodeBuild
+    ↓
+Build & Test
+    ↓
+CodeDeploy
+    ↓
+Application
 
-## Learning Outcome
 
-Gained a basic understanding of how source code repositories, Jenkins, and CI/CD processes work together to automate software delivery.
-
-## Note
-
-This repository documents the concepts learned from the learning material. It does not claim a hands-on CodeCommit or Jenkins CI/CD pipeline implementation.
